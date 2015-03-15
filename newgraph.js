@@ -63,11 +63,11 @@ function addEdge(v,w) {
 // a new function to display symbolic names instead of numbers
 function showGraph() {
 	for (var i = 0; i < this.vertices; ++i) {
-		putstr(this.vertexList[i] + " -> ");
+		write(this.vertexList[i] + " -> ");
 		for (var j = 0; j < this.vertices; ++j) {
 			if (this.adj[i][j] !== undefined) {
 				var w = this.adj[i][j];
-				putstr(this.vertexList[w] + ' ');
+				write(this.vertexList[w] + ' ');
 			}
 		}
 		print();

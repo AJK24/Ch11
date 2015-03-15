@@ -1,6 +1,6 @@
 load('newgraph.js');
 
-g = new Graph(6);
+g = new Graph(8);
 g.addEdge(6,4);
 g.addEdge(4,7);
 g.addEdge(4,3);
