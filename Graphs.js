@@ -86,7 +86,7 @@ function showGraph() {
 
 	for (var i = 0; i < this.vertices; ++i) {
 		write(this.vertexList[i] + " -> ");
-print(vertexList[i]);
+
 		for (var j = 0; j < this.vertices; ++j) {			
 		    	if (this.adj[i][j] !== undefined) {		
 print(' ADJ is not undefined ');				
