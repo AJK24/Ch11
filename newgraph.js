@@ -7,6 +7,9 @@ function Graph(v) {
 			  	   this.edges = 0;
 
 				   	    this.adj = [];
+					    this.pathTo = pathTo;
+					    this.hasPathTo = hasPathTo;
+					    this.showPath = showPath;
 
 					    	     for (var i = 0; i < this.vertices; ++i) {
 
@@ -230,4 +233,19 @@ function showPath(paths) {
 			write(paths.pop());
 		}
 	}
+}
+
+function pathTo(source, v) {
+	if (!this.hasPathTo(v)) {
+		return undefined;
+	}
+	var path = [];
+	for (var i = v; i != source; i = this.edgeTo[i]) {
+		path.push(i);
+	}
+	path.push(source);
+	return path;
+}
+function hasPathTo(v) {
+	return this.marked[v];
 }

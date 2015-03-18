@@ -13,6 +13,7 @@ g.addEdge(4,6);
 g.addEdge(6,7);
 g.addEdge(7,8);
 g.addEdge(8,9);
+g.addEdge(2,9);
 
 //g.showGraph();
 
@@ -31,3 +32,5 @@ var vertex = 9;
 var source = 0;
 var paths = g.pathTo(source,vertex);
 g.showPath(paths);
+
+print();
