@@ -1,4 +1,4 @@
-load('Graphs.js');
+load('newgraph.js');
 
 
 
