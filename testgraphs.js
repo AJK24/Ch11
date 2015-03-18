@@ -20,4 +20,14 @@ g.vertexList = ['foundation', 'walls', 'roof', 'drywall', 'furnature', 'decorati
 
 g.showGraph();
 print();
-g.topSort();
+//g.topSort();
+
+print();
+
+
+
+g.bfs(0);
+var vertex = 9;
+var source = 0;
+var paths = g.pathTo(source,vertex);
+g.showPath(paths);
