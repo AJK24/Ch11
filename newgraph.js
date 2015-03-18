@@ -97,6 +97,7 @@ function topSortHelper(v, visited, stack) {
 }
 
 function addEdge(v,w) {
+print('About to add ' + v + ' to ' + w);
 
 		 this.adj[v].push(w);
 
