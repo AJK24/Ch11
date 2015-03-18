@@ -169,7 +169,7 @@ function bfs(s) {
 
 								     		      if (v !== undefined) {
 
-											      			       console.log("Visited vertex: " + v);
+											      			      print("Visited vertex: " + v);
 
 														       			        }
 
@@ -219,4 +219,15 @@ function pathTo(source, v) {
 
 					    	     return path;
 
+}
+
+function showPath(paths) {
+	while (paths.length > 0) {
+		if (paths.length > 1) {
+			write(paths.pop() + '-');
+		}
+		else {
+			write(paths.pop());
+		}
+	}
 }
